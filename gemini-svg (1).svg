@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <rect width="512" height="512" rx="100" fill="#000000" />
+  <!-- Pena de escritor -->
+  <path d="M384 128C384 128 320 112 256 160C192 208 144 288 128 352L160 384C224 368 304 320 352 256C400 192 384 128 384 128Z" fill="none" stroke="#FFFFFF" stroke-width="24" stroke-linejoin="round" stroke-linecap="round"/>
+  <!-- Detalhe central/haste da pena -->
+  <path d="M160 352L320 192" fill="none" stroke="#FFFFFF" stroke-width="16" stroke-linecap="round"/>
+  <!-- Ponta da pena e tinteiro estilizado / base -->
+  <path d="M128 352L96 416L160 384" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="12" stroke-linejoin="round"/>
+</svg>
