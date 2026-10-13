@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>iWriter</title>
+  
+  <!-- Favicon para a aba do navegador -->
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  <link rel="shortcut icon" href="icon-192.png" type="image/png">
+  
   <link rel="stylesheet" href="style.css">
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#000000">
@@ -18,7 +23,7 @@
     <button id="theme-toggle" class="icon-btn" aria-label="Modo Claro/Escuro">
       <!-- Ícone de Lua -->
       <svg class="moon-icon" viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-      <!-- Ícone de Sol (oculto por CSS conforme o tema) -->
+      <!-- Ícone de Sol -->
       <svg class="sun-icon" viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
     </button>
   </header>
@@ -46,8 +51,8 @@
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
         navigator.serviceWorker.register('sw.js')
-          .then(reg => console.log('Service Worker registrado com sucesso:', reg.scope))
-          .catch(err => console.log('Falha ao registrar Service Worker:', err));
+          .then(reg => console.log('Service Worker registrado:', reg.scope))
+          .catch(err => console.log('Erro no Service Worker:', err));
       });
     }
   </script>
